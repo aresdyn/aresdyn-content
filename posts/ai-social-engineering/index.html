@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Powered Social Engineering: What Executives Need to Know | Ares Dynamics</title>
+  <meta name="description" content="Generative AI has fundamentally lowered the barrier for highly personalized, convincing social engineering attacks. This brief explains the mechanics and the defenses that actually work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../../../../assets/css/global.css" />
+  <link rel="stylesheet" href="../../../../assets/css/page.css" />
+  <link rel="stylesheet" href="../../../../assets/css/article.css" />
+</head>
+<body>
+  <div id="nav-mount"></div>
+
+  <article>
+    <section class="article-hero">
+      <div class="article-hero-grid"></div>
+      <div class="container article-hero-content">
+        <span class="post-tag post-tag--threat" style="margin-bottom:24px;display:inline-flex">
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4"/></svg>
+          Threat Brief
+        </span>
+        <h1 class="article-title">AI-Powered Social Engineering: What Executives Need to Know</h1>
+        <p class="article-subtitle">Generative AI has eliminated the barriers that previously filtered out unsophisticated attackers. The resulting threat is more personal, more convincing, and more difficult to detect than anything that came before it.</p>
+        <div class="article-meta">
+          <span class="article-meta-item">March 2025</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">8 min read</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">Ares Dynamics</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-body-section">
+      <div class="container">
+        <div class="article-layout">
+          <div class="article-content">
+
+            <p>For most of the past two decades, social engineering attacks followed a recognizable pattern: a mass-produced email, imperfect grammar, an urgent request, and a link to a credential-harvesting page. The indicators were learnable. The attacks were detectable. With sufficient training, an organization could achieve a reasonable level of resilience.</p>
+
+            <p>That era is effectively over.</p>
+
+            <p>Generative AI has removed the three constraints that previously limited the effectiveness of social engineering at scale: the cost of personalization, the quality of language, and the time required to research a target. An adversary with access to a capable language model and a basic understanding of open-source intelligence collection can now produce highly targeted, contextually accurate, grammatically flawless attack content at a pace and volume that no human team could match.</p>
+
+            <h2 id="what-changed">What Has Changed and Why It Matters</h2>
+
+            <p>The most significant shift is not the existence of AI-generated phishing content; it is the specificity that AI enables. Traditional phishing relied on volume: send enough emails and a percentage will succeed regardless of quality. AI-assisted attacks flip the model. A single, precisely crafted message targeting a specific executive, referencing their actual projects, recent travel, known colleagues, and current business context, is orders of magnitude more likely to succeed than a thousand generic ones.</p>
+
+            <div class="article-callout">
+              The indicators that trained humans to detect phishing; poor grammar, implausible urgency, generic greetings; are no longer reliable signals. AI produces flawless text. The cues are gone.
+            </div>
+
+            <p>This matters most for individuals at the intersection of public visibility and organizational authority. Executives, board members, public figures, and their immediate staff are the highest-value targets precisely because they have both the access and the authority that adversaries want. Their public footprint; conference appearances, media interviews, LinkedIn updates, public filings; provides the raw material that AI needs to craft a convincing pretext.</p>
+
+            <h2 id="attack-vectors">The Attack Vectors in Practice</h2>
+
+            <p>Understanding the current threat requires looking at the specific techniques being deployed, not the abstract concept of "AI phishing."</p>
+
+            <strong>AI-generated spear phishing</strong>
+
+            <p>Unlike generic phishing, spear phishing is tailored to a specific target. AI has made it possible to produce spear phishing content at scale. An adversary can feed a language model with publicly available information about a target; their LinkedIn profile, recent press mentions, organizational structure, known business relationships; and generate a highly convincing email that references real context. The message arrives appearing to come from a known contact, referencing a real project, and requesting a plausible action.</p>
+
+            <strong>Deepfake voice and video impersonation</strong>
+
+            <p>Voice cloning technology has matured to the point where a credible imitation of a known executive's voice can be produced from a few minutes of publicly available audio. These synthetic voices are being used in vishing (voice phishing) attacks to impersonate CFOs, general counsel, and other executives in calls to financial staff requesting wire transfers or credential resets. Several documented cases in 2023 and 2024 involved losses in the millions of dollars.</p>
+
+            <p>Video deepfakes, while more technically demanding, are increasingly viable for high-value targets. A convincing video call impersonating a known executive is no longer a theoretical risk.</p>
+
+            <strong>AI-assisted pretexting</strong>
+
+            <p>Pretexting refers to the construction of a fabricated scenario to manipulate a target into providing information or taking an action. AI dramatically improves the quality and consistency of pretext construction. An adversary can generate and maintain a coherent false identity across multiple interactions, with contextually appropriate responses to unexpected questions, at a quality level previously requiring skilled human operators.</p>
+
+            <h2 id="defenses">Why Traditional Defenses Fall Short</h2>
+
+            <p>The standard enterprise response to social engineering; awareness training and simulated phishing campaigns; was designed for a threat model that no longer applies. Annual training modules that teach employees to look for poor grammar and suspicious links are worse than useless against AI-generated content; they create false confidence in heuristics that no longer work.</p>
+
+            <p>The same limitation applies to technical controls. Email filtering systems trained to detect patterns associated with malicious content can be defeated by AI-generated text that mimics legitimate correspondence accurately enough to clear those filters. SPF, DKIM, and DMARC authentication controls remain valuable but address email domain spoofing, not content quality.</p>
+
+            <h2 id="what-works">What Actually Works</h2>
+
+            <p>Effective defense against AI-powered social engineering requires shifting from detection-based approaches to verification-based ones. The question is no longer "does this message look suspicious?" but "have I independently confirmed this request through a channel I control?"</p>
+
+            <strong>Out-of-band verification for sensitive requests</strong>
+
+            <p>Any request involving financial transactions, credential changes, access grants, or sensitive information disclosure should be verified through a separate, pre-established communication channel before action is taken. If an email purportedly from the CFO requests a wire transfer, the response is a phone call to a number already in your contacts; not a reply to the email, not a call to a number provided in the message.</p>
+
+            <strong>Reduced public footprint for high-risk individuals</strong>
+
+            <p>The raw material for AI-generated attacks is publicly available information. Reducing the information available about high-value targets directly reduces the quality of attacks that can be constructed against them. This includes data broker removal, social media privacy reviews, and limiting the detail of public-facing professional profiles.</p>
+
+            <strong>Context-aware security culture</strong>
+
+            <p>Training needs to evolve from pattern recognition to process adherence. The lesson is not "look for these red flags" but "this class of request always requires this verification step, regardless of how legitimate it appears." Removing the human judgment call from high-risk actions eliminates the most exploitable variable.</p>
+
+            <strong>Personal OSINT awareness</strong>
+
+            <p>Executives and their immediate staff should have a clear picture of what information about them is publicly available and how it could be used to construct a pretext. This awareness changes how people respond to requests that reference that information; context that feels validating ("they mentioned my recent conference appearance") becomes a red flag rather than a trust signal.</p>
+
+            <hr class="article-divider" />
+
+            <p>The threat posed by AI-powered social engineering is not theoretical and it is not on the horizon. It is the current operating environment. The organizations and individuals who adapt their defenses to this reality now will be materially better positioned than those waiting for a more dramatic signal. If you are concerned about your organization's exposure to these techniques, <a href="../../../../pages/waitlist/index.html">we are available to assess it.</a></p>
+
+          </div>
+
+          <aside class="article-sidebar">
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">In This Brief</span>
+              <nav class="article-toc">
+                <a href="#what-changed">What Has Changed</a>
+                <a href="#attack-vectors">Attack Vectors in Practice</a>
+                <a href="#defenses">Why Defenses Fall Short</a>
+                <a href="#what-works">What Actually Works</a>
+              </nav>
+            </div>
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Take Action</span>
+              <p style="font-size:14px;color:var(--grey);line-height:1.6;margin:16px 18px;font-weight:300">Concerned about your organization's exposure to AI-powered attacks?</p>
+              <div style="padding:0 18px 18px">
+                <a href="../../../../pages/waitlist/index.html" class="btn-primary" style="display:flex;justify-content:center;font-size:13px">Join the Waitlist</a>
+              </div>
+            </div>
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Related</span>
+              <a href="../executive-home-network/index.html" class="article-related-link">The Executive Home Network: An Overlooked Attack Surface</a>
+              <a href="../travel-security-high-profile/index.html" class="article-related-link">Travel Security for High-Profile Individuals</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <div id="footer-mount"></div>
+  <script src="../../../../assets/js/nav.js"></script>
+  <script src="../../../../assets/js/footer.js"></script>
+  <script src="../../../../assets/js/main.js"></script>
+</body>
+</html>

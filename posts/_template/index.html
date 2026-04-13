@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--
+  ════════════════════════════════════════════════════════════
+  ARES DYNAMICS — BLOG POST TEMPLATE
+  ────────────────────────────────────────────────────────────
+  TO CREATE A NEW POST:
+  1. Copy this entire folder (pages/blog/posts/_template/)
+  2. Rename the folder to your post slug, e.g.:
+       pages/blog/posts/my-post-title/
+  3. Edit the fields marked ← EDIT THIS below
+  4. Add the same slug/title/etc. to pages/blog/posts.js
+  ════════════════════════════════════════════════════════════
+  -->
+
+  <!-- ← EDIT THIS: Page title -->
+  <title>Post Title | Ares Dynamics</title>
+
+  <!-- ← EDIT THIS: Meta description (1-2 sentences for search engines) -->
+  <meta name="description" content="Your post description here." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../../../assets/css/global.css" />
+  <link rel="stylesheet" href="../../../assets/css/page.css" />
+  <link rel="stylesheet" href="../../../assets/css/article.css" />
+</head>
+<body>
+  <div id="nav-mount"></div>
+
+  <article>
+
+    <!-- ══ ARTICLE HERO ══════════════════════════════════════ -->
+    <section class="article-hero">
+      <div class="article-hero-grid"></div>
+      <div class="container article-hero-content">
+
+        <!-- ← EDIT THIS: category class + label -->
+        <!-- category options: post-tag--threat | post-tag--intel | post-tag--guide | post-tag--ops -->
+        <span class="post-tag post-tag--threat" style="margin-bottom:24px;display:inline-flex">
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4"/></svg>
+          Threat Brief
+        </span>
+
+        <!-- ← EDIT THIS: Article headline -->
+        <h1 class="article-title">Your Article Title Goes Here</h1>
+
+        <!-- ← EDIT THIS: One sentence summary -->
+        <p class="article-subtitle">A one-sentence summary of what this article covers and why it matters.</p>
+
+        <div class="article-meta">
+          <!-- ← EDIT THIS: Date and read time -->
+          <span class="article-meta-item">January 2025</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">8 min read</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">Ares Dynamics</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ ARTICLE BODY ═══════════════════════════════════════ -->
+    <section class="article-body-section">
+      <div class="container">
+        <div class="article-layout">
+
+          <!-- Main content column -->
+          <div class="article-content">
+
+            <!--
+            ────────────────────────────────────────────────────
+            WRITE YOUR ARTICLE CONTENT BELOW.
+            Available elements:
+
+            Paragraph:
+              <p>Your paragraph text here.</p>
+
+            Section heading (H2):
+              <h2>Section Title</h2>
+
+            Sub-heading (H3):
+              <h3>Sub-section Title</h3>
+
+            Callout / pull quote:
+              <div class="article-callout">
+                Key insight or important statement.
+              </div>
+
+            Bullet list:
+              <ul>
+                <li>First point</li>
+                <li>Second point</li>
+              </ul>
+
+            Numbered list:
+              <ol>
+                <li>Step one</li>
+                <li>Step two</li>
+              </ol>
+
+            Divider:
+              <hr class="article-divider" />
+
+            Key term:
+              <strong>Important term</strong> followed by explanation.
+            ────────────────────────────────────────────────────
+            -->
+
+            <p>Opening paragraph — set context and establish why this matters to the reader. Keep it direct. One or two sentences maximum before getting into substance.</p>
+
+            <h2>First Section Heading</h2>
+
+            <p>Body content here. Write clearly, concisely, and without jargon unless the term is explained. Your target reader is an executive or their security team — technically literate but not necessarily specialist-level.</p>
+
+            <div class="article-callout">
+              A key insight, statistic, or takeaway from this section that deserves emphasis.
+            </div>
+
+            <h2>Second Section Heading</h2>
+
+            <p>Continue the argument or analysis here.</p>
+
+            <ul>
+              <li>First key point or recommendation</li>
+              <li>Second key point or recommendation</li>
+              <li>Third key point or recommendation</li>
+            </ul>
+
+            <h2>What This Means For You</h2>
+
+            <p>Practical implications for the reader. Be specific. Vague recommendations are useless — tell them what to actually do or ask for.</p>
+
+            <hr class="article-divider" />
+
+            <!-- ← EDIT THIS: closing CTA paragraph -->
+            <p>If you're concerned about [topic], Ares Dynamics can assess your exposure and recommend specific mitigations. <a href="/pages/waitlist/index.html">Join the waitlist</a> to be considered for an engagement.</p>
+
+          </div><!-- /.article-content -->
+
+          <!-- Sidebar -->
+          <aside class="article-sidebar">
+
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">In This Brief</span>
+              <!-- ← EDIT THIS: Update anchor links to match your H2 headings -->
+              <nav class="article-toc">
+                <a href="#section-1">First Section</a>
+                <a href="#section-2">Second Section</a>
+                <a href="#section-3">What This Means For You</a>
+              </nav>
+            </div>
+
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Take Action</span>
+              <p style="font-size:14px;color:var(--grey);line-height:1.6;margin-bottom:16px;font-weight:300">Concerned about your exposure? Let's discuss your situation.</p>
+              <a href="../../../pages/waitlist/index.html" class="btn-primary" style="display:flex;justify-content:center;font-size:13px">Join the Waitlist</a>
+            </div>
+
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Related</span>
+              <!-- ← EDIT THIS: Link to 2-3 related posts -->
+              <a href="#" class="article-related-link">Related Post Title One</a>
+              <a href="#" class="article-related-link">Related Post Title Two</a>
+            </div>
+
+          </aside>
+
+        </div><!-- /.article-layout -->
+      </div>
+    </section>
+
+  </article>
+
+  <div id="footer-mount"></div>
+  <script src="../../../assets/js/nav.js"></script>
+  <script src="../../../assets/js/footer.js"></script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

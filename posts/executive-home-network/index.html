@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Executive Home Network: An Overlooked Attack Surface | Ares Dynamics</title>
+  <meta name="description" content="Corporate security ends at the office perimeter. This brief examines how adversaries exploit home networks to reach executive devices and credentials." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../../../../assets/css/global.css" />
+  <link rel="stylesheet" href="../../../../assets/css/page.css" />
+  <link rel="stylesheet" href="../../../../assets/css/article.css" />
+</head>
+<body>
+  <div id="nav-mount"></div>
+
+  <article>
+    <section class="article-hero">
+      <div class="article-hero-grid"></div>
+      <div class="container article-hero-content">
+        <span class="post-tag post-tag--intel" style="margin-bottom:24px;display:inline-flex">
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4"/></svg>
+          Intelligence
+        </span>
+        <h1 class="article-title">The Executive Home Network: An Overlooked Attack Surface</h1>
+        <p class="article-subtitle">Corporate security programs protect corporate infrastructure. The executive's home; where most real decisions are made and most sensitive communications happen; falls entirely outside that perimeter.</p>
+        <div class="article-meta">
+          <span class="article-meta-item">March 2025</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">6 min read</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">Ares Dynamics</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-body-section">
+      <div class="container">
+        <div class="article-layout">
+          <div class="article-content">
+
+            <p>Ask any CISO what their biggest security challenge is and you will rarely hear "the CEO's home router." Yet that router, and the network behind it, is one of the most consistently underprotected high-value targets in the modern threat landscape.</p>
+
+            <p>Enterprise security programs are designed around enterprise infrastructure. Firewalls, endpoint detection, identity management, network monitoring; all of it is built to protect systems that live within a defined corporate boundary. The executive's home sits entirely outside that boundary. The devices used there, the networks they connect to, and the accounts accessed from them receive none of those protections. Adversaries know this.</p>
+
+            <h2 id="why-target">Why the Home Network Is a Priority Target</h2>
+
+            <p>The value of compromising an executive's home environment is not technical; it is positional. An executive communicating from home is often less guarded, using personal accounts, discussing genuinely sensitive matters, and operating without the oversight structures that govern corporate environments. Access to that environment provides an adversary with a qualitatively different kind of intelligence than access to a corporate workstation.</p>
+
+            <div class="article-callout">
+              The home is where real conversations happen. Where strategy is discussed informally. Where credentials are reused across work and personal accounts. It is the gap between the executive's professional security posture and their actual one.
+            </div>
+
+            <p>Several characteristics of typical home environments make them structurally attractive to adversaries:</p>
+
+            <p><strong>Consumer-grade infrastructure.</strong> Most home networks run on consumer routers with default or weak credentials, rarely updated firmware, and no network segmentation. A compromised router provides a persistent position from which all network traffic can be observed.</p>
+
+            <p><strong>Mixed device environments.</strong> Home networks typically connect a combination of work devices, personal devices, smart home infrastructure, and family members' devices. Each represents a potential entry point, and lateral movement between them is often trivial.</p>
+
+            <p><strong>Credential reuse.</strong> Executives frequently use the same passwords across corporate and personal accounts, or store corporate credentials in browsers or password managers on personal devices. A compromise of a personal device can yield corporate access.</p>
+
+            <p><strong>No monitoring.</strong> Unlike corporate environments, home networks generate no security logs, trigger no alerts, and are monitored by no one. An adversary can operate within a home network for extended periods without any detection mechanism.</p>
+
+            <h2 id="attack-patterns">Common Attack Patterns Against Home Environments</h2>
+
+            <strong>Router compromise</strong>
+
+            <p>Consumer routers are among the most persistently vulnerable devices in any network. Many run firmware that has not been updated in years, contain known unpatched vulnerabilities, and use default administrative credentials that are never changed. A compromised router allows an adversary to intercept unencrypted traffic, redirect DNS queries to malicious infrastructure, and maintain persistent access to the network without touching any individual device.</p>
+
+            <strong>Smart home device exploitation</strong>
+
+            <p>The proliferation of smart home devices; security cameras, thermostats, voice assistants, smart televisions; has introduced dozens of new entry points into the typical executive home. These devices frequently run outdated firmware, communicate over insecure protocols, and are never included in any security review. Several documented campaigns have used compromised smart home devices as persistent footholds within executive home networks.</p>
+
+            <strong>Family member targeting</strong>
+
+            <p>Children and spouses connected to the same home network are often the path of least resistance to the executive's environment. Their devices are less likely to have endpoint protection, their accounts are less likely to use multi-factor authentication, and they are less likely to recognize a social engineering attempt. An adversary who compromises a family member's device on the same network as an executive's work laptop has achieved significant access without ever targeting the executive directly.</p>
+
+            <strong>ISP and DNS interception</strong>
+
+            <p>In higher-sophistication targeting scenarios, adversaries have exploited vulnerabilities in ISP infrastructure to perform DNS hijacking at the provider level; redirecting traffic without ever touching the target's home network directly. This technique is difficult to detect and falls entirely outside the target's ability to mitigate through endpoint controls.</p>
+
+            <h2 id="baseline">A Practical Baseline for Home Network Security</h2>
+
+            <p>The following measures represent a defensible baseline. They are not sufficient for the highest-risk individuals but provide a meaningful reduction in exposure for most executives.</p>
+
+            <p><strong>Dedicated work network segment.</strong> Configure a separate network segment (VLAN or guest network) for work devices, isolated from personal devices and smart home infrastructure. A compromise of a family member's device should not produce lateral movement onto the executive's work laptop.</p>
+
+            <p><strong>Business-grade router replacement.</strong> Consumer routers are not appropriate infrastructure for high-risk individuals. Replacing the home router with a business-grade device that supports proper segmentation, automatic firmware updates, and network-level threat protection is a foundational step.</p>
+
+            <p><strong>DNS filtering.</strong> Deploying a DNS filtering service at the network level blocks connections to known malicious infrastructure before they reach individual devices. This provides coverage for devices that cannot run endpoint security software.</p>
+
+            <p><strong>Firmware update discipline.</strong> Every network-connected device in the home should be on a regular firmware update schedule. This includes routers, smart home devices, printers, and anything else with a network interface. The majority of home network compromises exploit known, patched vulnerabilities on devices that have never been updated.</p>
+
+            <p><strong>Credential hygiene.</strong> Corporate credentials should never be stored in consumer-grade password managers or browsers on personal devices. A dedicated credential manager with strong master password and hardware-key MFA should be used for all accounts with business access.</p>
+
+            <hr class="article-divider" />
+
+            <p>The home network is not a technical problem with a technical solution. It is a gap in the security model that requires deliberate attention. For executives whose decisions, communications, and credentials represent genuine high-value targets, that gap warrants the same rigor applied to their corporate environment. If you would like an assessment of your home environment's current exposure, <a href="../../../../pages/waitlist/index.html">we are available to conduct one.</a></p>
+
+          </div>
+
+          <aside class="article-sidebar">
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">In This Brief</span>
+              <nav class="article-toc">
+                <a href="#why-target">Why Home Networks Are Targeted</a>
+                <a href="#attack-patterns">Common Attack Patterns</a>
+                <a href="#baseline">A Practical Baseline</a>
+              </nav>
+            </div>
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Take Action</span>
+              <p style="font-size:14px;color:var(--grey);line-height:1.6;margin:16px 18px;font-weight:300">Concerned about your home network exposure?</p>
+              <div style="padding:0 18px 18px">
+                <a href="../../../../pages/waitlist/index.html" class="btn-primary" style="display:flex;justify-content:center;font-size:13px">Join the Waitlist</a>
+              </div>
+            </div>
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Related</span>
+              <a href="../ai-social-engineering/index.html" class="article-related-link">AI-Powered Social Engineering: What Executives Need to Know</a>
+              <a href="../travel-security-high-profile/index.html" class="article-related-link">Travel Security for High-Profile Individuals</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <div id="footer-mount"></div>
+  <script src="../../../../assets/js/nav.js"></script>
+  <script src="../../../../assets/js/footer.js"></script>
+  <script src="../../../../assets/js/main.js"></script>
+</body>
+</html>
