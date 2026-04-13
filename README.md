@@ -29,7 +29,7 @@ aresdyn-content/
 
 `blog/index.html` fetches:
 ```
-https://raw.githubusercontent.com/mattcooper13/aresdyn-content/main/posts.json
+https://raw.githubusercontent.com/aresdyn/aresdyn-content/main/posts.json
 ```
 
 It reads the post index, renders cards for published posts, and links out to the
@@ -151,7 +151,7 @@ n8n has an FTP node — configure it with Ionos host, username, and password.
 Claude and n8n can push files to GitHub via the REST API without a local git install:
 
 ```
-PUT https://api.github.com/repos/mattcooper13/aresdyn-content/contents/posts.json
+PUT https://api.github.com/repos/aresdyn/aresdyn-content/contents/posts.json
 ```
 
 Required headers: `Authorization: Bearer YOUR_GITHUB_PAT`
@@ -159,7 +159,7 @@ Body: `{ "message": "publish: slug", "content": "<base64-encoded file content>",
 
 Get the current SHA first:
 ```
-GET https://api.github.com/repos/mattcooper13/aresdyn-content/contents/posts.json
+GET https://api.github.com/repos/aresdyn/aresdyn-content/contents/posts.json
 ```
 
 ---
