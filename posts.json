@@ -2,7 +2,7 @@
   {
     "slug": "ai-social-engineering",
     "title": "AI-Powered Social Engineering: What Executives Need to Know",
-    "excerpt": "Generative AI has fundamentally lowered the barrier for highly personalized, convincing social engineering attacks. Adversaries are now crafting phishing emails, deepfake voice calls, and synthetic video impersonations at scale. This brief explains the mechanics and the defenses that actually work.",
+    "excerpt": "Generative AI has eliminated the barriers that previously filtered out unsophisticated attackers. The resulting threat is more personal, more convincing, and more difficult to detect than anything that came before it.",
     "category": "threat",
     "categoryLabel": "Threat Brief",
     "date": "Mar 2025",
@@ -14,16 +14,19 @@
   {
     "slug": "executive-home-network",
     "title": "The Executive Home Network: An Overlooked Attack Surface",
-    "excerpt": "Corporate security ends at the office perimeter. This brief examines how adversaries exploit home networks to reach executive devices and credentials.",
+    "excerpt": "Corporate security programs protect corporate infrastructure. The executive's home, where most real decisions are made and most sensitive communications happen, falls entirely outside that perimeter.",
     "category": "intel",
     "categoryLabel": "Intelligence",
     "date": "Mar 2025",
     "readTime": "6 min read",
     "featured": false,
     "pattern": "node-map",
-    "status": "published",
+    "status": "published"
+  },
+  {
+    "slug": "travel-security-high-profile",
     "title": "Travel Security for High-Profile Individuals",
-    "excerpt": "International travel creates concentrated windows of elevated exposure. Key risks, practical mitigations, and pre-departure protocols.",
+    "excerpt": "Travel compresses risk into a predictable, observable window. Adversaries know your location, your schedule, and your network context. Most travelers do not know theirs are being watched.",
     "category": "guide",
     "categoryLabel": "Guide",
     "date": "Mar 2025",
@@ -38,21 +41,23 @@
     "excerpt": "The decisions made in the first hour of a breach determine its ultimate scope. A structured framework for the critical initial response window.",
     "category": "ops",
     "categoryLabel": "Operations",
-    "date": "Coming Soon",
+    "date": "Apr 2025",
     "readTime": "7 min read",
     "featured": false,
-    "status": "coming-soon"
+    "pattern": "bar-chart",
+    "status": "published"
   },
   {
     "slug": "credential-exposure-pipeline",
-    "title": "Credential Exposure: How Your Leaked Passwords Become Weapons",
+    "title": "Credential Exposure: How Leaked Passwords Become Weapons",
     "excerpt": "Dark web credential markets are sophisticated, fast-moving, and actively targeting executive accounts. Understanding the pipeline from breach to attack.",
     "category": "threat",
     "categoryLabel": "Threat Brief",
-    "date": "Coming Soon",
+    "date": "Apr 2025",
     "readTime": "6 min read",
     "featured": false,
-    "status": "coming-soon"
+    "pattern": "triangulate",
+    "status": "published"
   },
   {
     "slug": "supply-chain-blind-spots",
@@ -63,17 +68,19 @@
     "date": "Coming Soon",
     "readTime": "7 min read",
     "featured": false,
+    "pattern": "venn",
     "status": "coming-soon"
   },
   {
     "slug": "security-awareness-what-works",
-    "title": "Why Most Security Awareness Programs Fail — and What Works Instead",
+    "title": "Why Most Security Awareness Programs Fail and What Works Instead",
     "excerpt": "Annual compliance training does not change behavior. Evidence-based approaches to building genuine security awareness in organizations.",
     "category": "ops",
     "categoryLabel": "Operations",
     "date": "Coming Soon",
     "readTime": "6 min read",
     "featured": false,
+    "pattern": "flow",
     "status": "coming-soon"
   }
 ]

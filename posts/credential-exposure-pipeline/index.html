@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credential Exposure: How Leaked Passwords Become Weapons | Ares Dynamics</title>
+  <meta name="description" content="Dark web credential markets are sophisticated, fast-moving, and actively targeting executive accounts. Understanding the pipeline from breach to attack." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../../../../assets/css/global.css" />
+  <link rel="stylesheet" href="../../../../assets/css/page.css" />
+  <link rel="stylesheet" href="../../../../assets/css/article.css" />
+  <link rel="icon" type="image/x-icon" href="../../../../assets/images/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/favicons/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="../../../../assets/images/favicons/site.webmanifest" />
+</head>
+<body>
+  <div id="nav-mount"></div>
+
+  <article>
+    <section class="article-hero">
+      <div class="article-hero-grid"></div>
+      <div class="container article-hero-content">
+        <span class="post-tag post-tag--threat" style="margin-bottom:24px;display:inline-flex">
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4"/></svg>
+          Threat Brief
+        </span>
+        <h1 class="article-title">Credential Exposure: How Leaked Passwords Become Weapons</h1>
+        <p class="article-subtitle">A password exposed in a breach years ago may be actively targeting your accounts today. The pipeline from credential theft to account compromise is faster, more automated, and more targeted than most organizations understand.</p>
+        <div class="article-meta">
+          <span class="article-meta-item">April 2025</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">6 min read</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">Ares Dynamics</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-body-section">
+      <div class="container">
+        <div class="article-layout">
+          <div class="article-content">
+
+            <p>Every major data breach produces a corpus of credentials that enters the dark web ecosystem within hours of the breach becoming known. What happens to those credentials after that point is a structured, largely automated process that most people, including many security professionals, significantly underestimate in speed and sophistication.</p>
+
+            <p>Understanding this pipeline matters because the defenses against it are specific and different from general cybersecurity hygiene. An organization can have excellent perimeter security, robust endpoint detection, and mature identity management, and still be compromised through credentials leaked from a third-party breach that happened three years ago.</p>
+
+            <h2 id="how-credentials-move">How Credentials Move After a Breach</h2>
+
+            <p>When a database of credentials is stolen, it typically moves through several layers before reaching the attackers most likely to use it against you.</p>
+
+            <p>Initial breach data is often held privately for weeks or months while the attacker exploits it or sells exclusive access to other threat actors. After the exclusivity window closes, it enters the broader criminal marketplace. Compiled with credentials from other breaches, it becomes part of the aggregated datasets that fuel the bulk of credential-based attacks.</p>
+
+            <div class="article-callout">
+              A password you stopped using two years ago may still be compromising accounts today. Credential databases persist, get merged, and are resold indefinitely. Exposure does not expire.
+            </div>
+
+            <strong>Credential stuffing at scale</strong>
+
+            <p>Credential stuffing is the automated process of testing username and password combinations from breach databases against target services. Modern stuffing operations use residential proxy networks to distribute login attempts across thousands of IP addresses, bypassing rate limiting and IP-based detection. They target services where credential reuse is likely: email, financial platforms, corporate VPNs, and cloud services.</p>
+
+            <p>The success rate of stuffing attacks is low per credential. It does not need to be high. Against a database of fifty million credentials, even a 0.1 percent success rate produces fifty thousand compromised accounts.</p>
+
+            <strong>Targeted executive credential markets</strong>
+
+            <p>Alongside bulk credential markets, specialized markets have emerged that focus specifically on high-value targets: executives, board members, public figures, and their immediate staff. These markets curate credentials by title, organization, and access level, and price them accordingly. An executive email credential with confirmed active session cookies sells for orders of magnitude more than a generic consumer account.</p>
+
+            <p>Buyers of these credentials are typically conducting targeted attacks: business email compromise fraud, corporate espionage, or account takeover for reputational damage. The attack is not random. The target was selected deliberately.</p>
+
+            <h2 id="why-mfa-is-not-enough">Why MFA Alone Is Not the Answer</h2>
+
+            <p>Multi-factor authentication is necessary and should be universally deployed. It is not sufficient on its own. Several attack techniques specifically circumvent MFA in ways that organizations do not consistently defend against.</p>
+
+            <strong>MFA fatigue attacks</strong>
+
+            <p>An attacker with valid credentials can trigger repeated MFA push notifications to a target's device. If the target approves one to stop the notifications, the attacker is in. Several high-profile breaches in recent years were executed through exactly this mechanism against organizations with mature MFA deployments.</p>
+
+            <strong>Session cookie theft</strong>
+
+            <p>Modern info-stealer malware targets browser session cookies rather than passwords. A valid session cookie allows an attacker to authenticate to services as the victim without needing credentials or MFA at all, because the session was already authenticated before the cookie was stolen. This is one reason why credential markets include "cookie logs" as a distinct and premium product category.</p>
+
+            <strong>SIM swapping</strong>
+
+            <p>For accounts using SMS-based MFA, SIM swapping remains a viable attack against high-value targets. An attacker social engineers a mobile carrier into transferring the target's phone number to a SIM the attacker controls. All SMS-based verification then routes to the attacker. This attack is disproportionately used against public figures and executives precisely because the effort investment is only justified by the target's value.</p>
+
+            <h2 id="what-effective-defense-looks-like">What Effective Defense Looks Like</h2>
+
+            <p>Credential exposure defense is not a single control. It is a set of practices applied across the credential lifecycle.</p>
+
+            <strong>Continuous credential monitoring</strong>
+
+            <p>Organizations and individuals should have ongoing visibility into whether their credentials have appeared in breach datasets. This is not a one-time check. New breach data enters the market continuously, and credentials that were clean six months ago may be compromised today. Effective monitoring watches email addresses, domains, and known accounts against continuously updated breach databases including dark web sources that public tools do not reach.</p>
+
+            <strong>Phishing-resistant MFA</strong>
+
+            <p>Hardware security keys (FIDO2/WebAuthn) are the only MFA mechanism that is resistant to phishing, MFA fatigue, and SIM swapping. For high-risk individuals, migrating from push-based or SMS MFA to hardware keys eliminates the attack vectors that currently bypass most MFA deployments.</p>
+
+            <strong>Credential hygiene for high-value accounts</strong>
+
+            <p>Credentials for corporate access, financial platforms, and any account tied to a public identity should be unique, generated by a password manager, and rotated after any suspected exposure. Password reuse is the mechanism that makes credential stuffing viable. Remove the reuse, and stuffed credentials from third-party breaches cannot reach your accounts.</p>
+
+            <strong>Session management</strong>
+
+            <p>Active session review, forced re-authentication for sensitive actions, and endpoint security that detects info-stealer malware all reduce the window of exposure if credentials are compromised. Sessions should not persist indefinitely on unmanaged devices.</p>
+
+            <hr class="article-divider" />
+
+            <p>Credential exposure is not a theoretical risk. It is the most common initial access vector for attacks against high-profile individuals and organizations. If you want to understand your current exposure or build a credential security program appropriate to your risk profile, <a href="../../../../pages/waitlist/index.html">we are available to help.</a></p>
+
+          </div>
+
+          <aside class="article-sidebar">
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">In This Brief</span>
+              <nav class="article-toc">
+                <a href="#how-credentials-move">How Credentials Move</a>
+                <a href="#why-mfa-is-not-enough">Why MFA Is Not Enough</a>
+                <a href="#what-effective-defense-looks-like">What Effective Defense Looks Like</a>
+              </nav>
+            </div>
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Take Action</span>
+              <p style="font-size:15px;color:var(--grey);line-height:1.6;margin:16px 18px;font-weight:300">Concerned about credential exposure for your accounts or organization?</p>
+              <div style="padding:0 18px 18px">
+                <a href="../../../../pages/waitlist/index.html" class="btn-primary" style="display:flex;justify-content:center;font-size:13px">Join the Waitlist</a>
+              </div>
+            </div>
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Related</span>
+              <a href="../ai-social-engineering/index.html" class="article-related-link">AI-Powered Social Engineering: What Executives Need to Know</a>
+              <a href="../executive-home-network/index.html" class="article-related-link">The Executive Home Network: An Overlooked Attack Surface</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <div id="footer-mount"></div>
+  <script src="../../../../assets/js/nav.js"></script>
+  <script src="../../../../assets/js/footer.js"></script>
+  <script src="../../../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The First 60 Minutes: Incident Response Decision Framework | Ares Dynamics</title>
+  <meta name="description" content="The decisions made in the first hour of a breach determine its ultimate scope. A structured framework for the critical initial response window." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../../../../assets/css/global.css" />
+  <link rel="stylesheet" href="../../../../assets/css/page.css" />
+  <link rel="stylesheet" href="../../../../assets/css/article.css" />
+  <link rel="icon" type="image/x-icon" href="../../../../assets/images/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/images/favicons/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/images/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="../../../../assets/images/favicons/site.webmanifest" />
+</head>
+<body>
+  <div id="nav-mount"></div>
+
+  <article>
+    <section class="article-hero">
+      <div class="article-hero-grid"></div>
+      <div class="container article-hero-content">
+        <span class="post-tag post-tag--ops" style="margin-bottom:24px;display:inline-flex">
+          <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4"/></svg>
+          Operations
+        </span>
+        <h1 class="article-title">The First 60 Minutes: Incident Response Decision Framework</h1>
+        <p class="article-subtitle">The decisions made in the first hour of a breach determine its ultimate scope. Most organizations improvise when they should be executing a practiced sequence of deliberate actions.</p>
+        <div class="article-meta">
+          <span class="article-meta-item">April 2025</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">7 min read</span>
+          <span class="article-meta-sep">·</span>
+          <span class="article-meta-item">Ares Dynamics</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-body-section">
+      <div class="container">
+        <div class="article-layout">
+          <div class="article-content">
+
+            <p>When a breach is detected, the pressure to act immediately is almost universal. That pressure is the most dangerous element of the first hour. Reactive action without a clear decision sequence consistently results in destroyed forensic evidence, incomplete containment, premature public disclosure, and unnecessary scope expansion.</p>
+
+            <p>The first sixty minutes of incident response are not about fixing the problem. They are about understanding what you are dealing with and preserving your options. Every decision made in this window either narrows or expands what is possible in the hours and days that follow.</p>
+
+            <h2 id="minutes-zero-to-ten">Minutes 0 to 10: Confirm Before You Act</h2>
+
+            <p>The first instinct when an alert fires or a user reports something anomalous is to start touching systems. Resist it. The first ten minutes belong to verification, not remediation.</p>
+
+            <p>Determine whether what you are seeing is a genuine security incident or an operational issue. A misconfigured system, a failed backup, or an unusual but legitimate access pattern can generate indicators that look like a breach. Acting on a false positive with incident response aggression creates disruption, destroys trust in your detection systems, and may cause more damage than the trigger itself.</p>
+
+            <div class="article-callout">
+              Confirm the incident is real before triggering your response. A two-minute verification step prevents hours of misdirected effort and preserves the forensic integrity of your environment.
+            </div>
+
+            <p>If you can confirm a genuine incident, resist the urge to immediately disconnect affected systems. Isolation is not always the right first move. Premature disconnection can destroy volatile memory evidence, alert an attacker that they have been detected, and trigger automated actions within attacker tooling that accelerate the damage.</p>
+
+            <h2 id="minutes-ten-to-twenty">Minutes 10 to 20: Establish Command</h2>
+
+            <p>Incident response degrades rapidly without a single decision-maker. In the first twenty minutes, the most important organizational action is establishing who is in command and ensuring that everyone else knows it.</p>
+
+            <strong>Assign roles immediately</strong>
+
+            <p>The incident commander owns all decisions. They are not the most technical person in the room; they are the person with the clearest view of business impact and the authority to commit resources and make communications decisions. Technical leads handle the hands-on work and report up. Communications lead handles all internal and external messaging. Legal and compliance are notified, not consulted in real time unless a specific decision requires it.</p>
+
+            <strong>Open a dedicated communications channel</strong>
+
+            <p>All incident-related communications should move to a channel that is separate from your normal operations and that you have confidence has not been compromised. If your primary communications infrastructure is part of the suspected scope of the incident, use out-of-band alternatives. This is not a theoretical concern: attackers with persistent access to corporate communications learn your response posture in real time.</p>
+
+            <h2 id="minutes-twenty-to-forty">Minutes 20 to 40: Scope and Contain</h2>
+
+            <p>With command established and verification complete, the next phase is understanding the scope of what you are dealing with before taking containment action. Containment without scope assessment is guesswork, and guesswork at this stage leaves access vectors open.</p>
+
+            <p>The questions to answer in this window are: What systems are confirmed affected? What systems are suspected affected? What was the initial access vector? Is the attacker still active in the environment? What data has potentially been accessed or exfiltrated?</p>
+
+            <p>You will not have complete answers to all of these in twenty minutes. You need directional answers that are good enough to make sound containment decisions. A rough, honest picture is more useful than a precise picture that takes three hours to produce.</p>
+
+            <strong>Targeted containment, not broad shutdown</strong>
+
+            <p>Contain the confirmed scope. Do not shut down infrastructure beyond what is necessary to stop active attacker movement. Every system you take offline is a system you cannot use, and it may be a system you need. Broad shutdowns also carry significant business impact that incident commanders often have not fully considered in the moment.</p>
+
+            <p>Preserve forensic artifacts before containment wherever possible. Memory captures, network traffic logs, and authentication logs from the period of the incident are the foundation of your investigation and, potentially, your legal response. Once systems are isolated or shut down, some of this evidence is gone.</p>
+
+            <h2 id="minutes-forty-to-sixty">Minutes 40 to 60: Notify and Stabilize</h2>
+
+            <p>The final phase of the first hour is controlled notification and beginning the transition from crisis response to sustained incident management.</p>
+
+            <p>Internal notification goes first: executive leadership, legal counsel, and any board members or oversight bodies required by your governance structure. The message at this stage is factual and scoped to what is known. Speculation about cause or impact does not belong in initial notifications.</p>
+
+            <p>External notification, including customers, regulators, and the public, should not happen in the first sixty minutes unless you have a legal obligation with a tighter timeline or your incident involves active harm to individuals that requires immediate warning. Most regulatory breach notification obligations have windows of 24 to 72 hours. Use that window to develop an accurate picture before communicating externally.</p>
+
+            <div class="article-callout">
+              Premature external disclosure is not transparency. It is noise. An accurate disclosure forty-eight hours in does less reputational damage than three rounds of revised statements following a rushed initial announcement.
+            </div>
+
+            <h2 id="what-this-requires">What This Requires Before the Incident</h2>
+
+            <p>The framework above works if your team has practiced it. It fails if the first time anyone has thought through these decisions is during the incident itself.</p>
+
+            <p>The minimum pre-incident requirements are a documented incident response plan with defined roles, a tested out-of-band communications capability, pre-negotiated relationships with external forensics and legal resources, and tabletop exercises that have stress-tested your decision sequence under time pressure. None of these are difficult to establish. All of them are consistently deferred until after an incident makes the absence obvious.</p>
+
+            <p>If you do not currently have a tested incident response capability and want to understand what it would take to build one, <a href="../../../../pages/waitlist/index.html">we are available to assess your current posture and develop the framework with you.</a></p>
+
+          </div>
+
+          <aside class="article-sidebar">
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">In This Brief</span>
+              <nav class="article-toc">
+                <a href="#minutes-zero-to-ten">Minutes 0 to 10: Confirm</a>
+                <a href="#minutes-ten-to-twenty">Minutes 10 to 20: Command</a>
+                <a href="#minutes-twenty-to-forty">Minutes 20 to 40: Scope and Contain</a>
+                <a href="#minutes-forty-to-sixty">Minutes 40 to 60: Notify</a>
+                <a href="#what-this-requires">What This Requires</a>
+              </nav>
+            </div>
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Take Action</span>
+              <p style="font-size:15px;color:var(--grey);line-height:1.6;margin:16px 18px;font-weight:300">Does your organization have a tested incident response framework?</p>
+              <div style="padding:0 18px 18px">
+                <a href="../../../../pages/waitlist/index.html" class="btn-primary" style="display:flex;justify-content:center;font-size:13px">Join the Waitlist</a>
+              </div>
+            </div>
+            <div class="article-sidebar-card">
+              <span class="article-sidebar-label">Related</span>
+              <a href="../ai-social-engineering/index.html" class="article-related-link">AI-Powered Social Engineering: What Executives Need to Know</a>
+              <a href="../credential-exposure-pipeline/index.html" class="article-related-link">Credential Exposure: How Leaked Passwords Become Weapons</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <div id="footer-mount"></div>
+  <script src="../../../../assets/js/nav.js"></script>
+  <script src="../../../../assets/js/footer.js"></script>
+  <script src="../../../../assets/js/main.js"></script>
+</body>
+</html>
