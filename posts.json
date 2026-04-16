@@ -1,5 +1,17 @@
 [
   {
+    "slug": "malicious-chrome-extensions-data-theft",
+    "title": "Malicious Chrome Extensions Target User Data",
+    "excerpt": "Recent research uncovered 108 malicious Chrome extensions that have stolen user credentials and hijacked sessions, affecting around 20,000 users. This incident highlights ongoing vulnerabilities in browser extensions.",
+    "category": "threat",
+    "categoryLabel": "Threat Brief",
+    "date": "Apr 2026",
+    "readTime": "7 min read",
+    "featured": false,
+    "pattern": "bar-chart",
+    "status": "draft"
+  },
+  {
     "slug": "ai-social-engineering",
     "title": "AI-Powered Social Engineering: What Executives Need to Know",
     "excerpt": "Generative AI has eliminated the barriers that previously filtered out unsophisticated attackers. The resulting threat is more personal, more convincing, and more difficult to detect than anything that came before it.",
